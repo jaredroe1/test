@@ -7,6 +7,7 @@ public class methodTest {
         myArray[2] = 8;
 
         System.out.println(sumArray(myArray));
+        System.out.println("Done");
     }
 
     public static int sumArray(int[] numbers) {
