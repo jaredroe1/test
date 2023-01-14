@@ -1,3 +1,8 @@
+import java.lang.reflect.Array;
+import java.util.List;
+
+import static java.lang.reflect.Array.setInt;
+
 public class practice {
 
     //static int sumOfDigits(int digits) {
@@ -13,17 +18,21 @@ public class practice {
         //return sum;
    // }
 
+    static int addingIndex = 0;
 
 
     public static void main(String[] args) {
+        int[] arr = {-11, 43, 901, 72, -5};
+        int[] arr2 = arr.clone();
+
+        System.out.println(arr2[3]);
 
 
-        // int[] array = {1, 5, 2, 8, 13, 6};
-        //System.out.println(array[0]);
-        //System.out.println(array[array.length - 1]);
-        //for (int i = 0; i < array.length; i++){
-        // System.out.println(array[i]);
-        // }
+    }
+
+
+
+
 
         //for (int number : array) {
         //System.out.println(number);
@@ -58,5 +67,6 @@ public class practice {
 
 
 
-    }
+
+
 }
