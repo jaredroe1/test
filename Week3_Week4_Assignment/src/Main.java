@@ -32,6 +32,9 @@ public class Main {
         //String joined = String.join(" ", names);
         //System.out.println(joined);
         // this seemed to get the desired result but did not use a loop to join the names together
+
+        //to access the last element of any array
+        System.out.println(names[names.length-1]);
         }
     }
 
