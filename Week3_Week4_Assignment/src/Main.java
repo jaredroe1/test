@@ -31,6 +31,7 @@ public class Main {
 
         //String joined = String.join(" ", names);
         //System.out.println(joined);
+        // this seemed to get the desired result but did not use a loop to join the names together
         }
     }
 
