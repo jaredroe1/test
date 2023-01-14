@@ -35,6 +35,9 @@ public class Main {
 
         //to access the last element of any array
         System.out.println(names[names.length-1]);
+
+        // to access the first element of any array
+        System.out.println(names[0]);
         }
     }
 
