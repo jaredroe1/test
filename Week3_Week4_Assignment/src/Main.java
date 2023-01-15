@@ -56,6 +56,10 @@ public class Main {
         double[] moreNumbers = {1.1, 1.2, 1.3, 1.4, 1.5};
         System.out.println(averageOfDoubles(numbers));
         System.out.println(firstArrayIsGreater(numbers, moreNumbers));
+
+        boolean isHotOutside = true;
+        double moneyInPocket = 7.50;
+        System.out.println(willBuyDrink(isHotOutside, moneyInPocket));
     }
 
 
@@ -120,6 +124,14 @@ public class Main {
         }
 
         //Write a method called willBuyDrink that takes a boolean isHotOutside, and a double moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+        public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
+            if (isHotOutside == true && moneyInPocket > 10.50) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
 
     }
 
