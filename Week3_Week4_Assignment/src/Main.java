@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        int[] ages = {3, 9, 23, -64, 2, 8, 28, -93, -105};
+        int[] ages = {3, 9, 23, 64, 2, 8, 28, 93, 105};
         int lastMinusFirst = ages[ages.length - 1] - ages[0];
         System.out.println(lastMinusFirst);
         double sum = 0;
@@ -51,6 +51,11 @@ public class Main {
         System.out.println(fullName("Jared", "Roe"));
 
         System.out.println(moreThanOneHundred(ages));
+
+        double[] numbers = {1.2, 5.2, 6.7, 7.1, 8.4};
+        double[] moreNumbers = {1.1, 1.2, 1.3, 1.4, 1.5};
+        System.out.println(averageOfDoubles(numbers));
+        System.out.println(firstArrayIsGreater(numbers, moreNumbers));
     }
 
 
@@ -85,6 +90,37 @@ public class Main {
         }
 
         //Write a method that takes an array of double and returns the average of all the elements in the array.
+        public static double averageOfDoubles(double[] numbers) {
+            double sum = 0;
+            for (double number: numbers) {
+                sum += number;
+            }
+            return sum / numbers.length;
+        }
+
+        //Write a method that takes two arrays of double and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+        public static boolean firstArrayIsGreater(double[] numbers, double[] moreNumbers) {
+            double firstSum = 0;
+            double secondSum = 0;
+            for (double number : numbers) {
+                firstSum += number;
+            }
+            double firstAvg = firstSum / numbers.length;
+
+            for (double number : moreNumbers) {
+                secondSum += number;
+            }
+            double secondAvg = secondSum / moreNumbers.length;
+
+            if (firstAvg > secondAvg) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        //Write a method called willBuyDrink that takes a boolean isHotOutside, and a double moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
     }
 
 
