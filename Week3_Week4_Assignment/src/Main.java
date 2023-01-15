@@ -3,10 +3,12 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-
+    //Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
         int[] ages = {3, 9, 23, 64, 2, 8, 28, 93, 105};
+    //Programmatically subtract the value of the first element in the array from the value in the last element of the array (i.e. do not use ages[7] in your code). Print the result to the console.
         int lastMinusFirst = ages[ages.length - 1] - ages[0];
         System.out.println(lastMinusFirst);
+    //Use a loop to iterate through the array and calculate the average age. Print the result to the console.
         double sum = 0;
 
         for (int number : ages) {
@@ -14,8 +16,9 @@ public class Main {
         }
         double average = sum / ages.length;
         System.out.println("Average age is: " + average + ".");
-
+    //Create an array of String called names that contains the following values: “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
         String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
+    //Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
         double sumOfLetters = 0;
 
         for (String name : names) {
@@ -23,7 +26,7 @@ public class Main {
         }
         double avgLetters = sumOfLetters / names.length;
         System.out.println("Average name length is: " + avgLetters + " letters.");
-
+    //Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
         for (int i = 0; i < names.length; i++) {
             names[i] = names[i] + "";
         }
@@ -132,7 +135,7 @@ public class Main {
             }
         }
 
-
+        //Create a method of your own that solves a problem. In comments, write what the method does and why you created it.
     }
 
 
