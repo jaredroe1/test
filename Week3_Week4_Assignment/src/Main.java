@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        int[] ages = {3, 9, 23, 64, 2, 8, 28, 93, 105};
+        int[] ages = {3, 9, 23, -64, 2, 8, 28, -93, -105};
         int lastMinusFirst = ages[ages.length - 1] - ages[0];
         System.out.println(lastMinusFirst);
         double sum = 0;
@@ -50,7 +50,7 @@ public class Main {
 
         System.out.println(fullName("Jared", "Roe"));
 
-
+        System.out.println(moreThanOneHundred(ages));
     }
 
 
@@ -70,6 +70,21 @@ public class Main {
         public static String fullName(String firstName, String lastName){
             return firstName + " " + lastName;
         }
+
+        //Write a method that takes an array of int and returns true if the sum of all the ints in the array is greater than 100.
+        public static boolean moreThanOneHundred(int [] ages) {
+            double sum = 0;
+            for (int number : ages) {
+                sum += number;
+            }
+            if (sum > 100) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        //Write a method that takes an array of double and returns the average of all the elements in the array.
     }
 
 
