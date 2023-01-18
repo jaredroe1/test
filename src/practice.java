@@ -5,6 +5,7 @@ import static java.lang.reflect.Array.setInt;
 
 public class practice {
 
+
     //static int sumOfDigits(int digits) {
         //String temp = Integer.toString(digits);
        // int[] numbers = new int[temp.length()];
@@ -18,14 +19,22 @@ public class practice {
         //return sum;
    // }
 
-    static int addingIndex = 0;
+    //static int addingIndex = 0;
 
 
     public static void main(String[] args) {
-        int[] arr = {-11, 43, 901, 72, -5};
-        int[] arr2 = arr.clone();
 
-        System.out.println(arr2[3]);
+        String day = "hello";
+
+        if (!day.equalsIgnoreCase("Monday")) {
+            System.out.println("please enter valid day.");
+        } else {
+            System.out.println("happy monday");
+        }
+        //int[] arr = {-11, 43, 901, 72, -5};
+        //int[] arr2 = arr.clone();
+
+       // System.out.println(arr2[3]);
 
 
     }

@@ -45,9 +45,18 @@ public class Main {
         System.out.println(names[0]);
 
         //Create a new array of int called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+        int[] nameLengths = extractStringLength(names);
+        for (int number : nameLengths) {
+            System.out.println(number);
+        }
+
 
         //Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
-
+        int nameLengthSum = 0;
+        for (int number: nameLengths) {
+            nameLengthSum += number;
+        }
+        System.out.println(nameLengthSum);
 
         System.out.println(multiplyString("Welcome", 3));
 
@@ -69,7 +78,13 @@ public class Main {
 
 
     }
-
+    public static int[] extractStringLength(String[] names) {
+        int[] results = new int[names.length];
+        for (int i = 0; i < names.length; i++) {
+            results[i] = names[i].length();
+        }
+        return results;
+    }
 
     //Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in “Hello” and 3, I expect the method to return “HelloHelloHello”).
     public static String multiplyString(String str, int num) {
